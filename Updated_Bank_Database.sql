@@ -1,5 +1,4 @@
 
--- Skapande av nya tabeller med justerade attribut och strukturer
 
 CREATE TABLE Client (
     ClientID INT PRIMARY KEY AUTO_INCREMENT,
@@ -29,7 +28,6 @@ CREATE TABLE BankTransaction (
     FOREIGN KEY (TargetAccountID) REFERENCES BankAccount(AccountID)
 );
 
--- Fyller databasen med nya testdata
 
 INSERT INTO Client (FullName, EmailAddress, ContactNumber, HomeAddress, BirthDate) VALUES
 ('Alice Andersson', 'alice.andersson@example.com', '+46123456789', 'Storgatan 1, Stockholm', '1985-03-12'),
